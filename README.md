@@ -85,14 +85,13 @@ Pins are mapped according to this diagram:
 ![Diagram](pinmap.png)
 
 ### Code example
-
-This example will set pin #2 as an input, with the pullup resistor enabled and #1 as an output.
+As address I used the 0x24 I2C adress of my setup. Depending on your address you have to change the I2C address. This example will set pin #2 as an input, with the pullup resistor enabled and #1 as an output.
 When the input goes `high`, pin #1 will also go high.
 
 ```py
 import mcp23017_lib as MCP
 
-MCP.start(0x26)
+MCP.start(0x24)
 
 MCP.setup(2, MCP.IN, MCP.PUHIGH)
 MCP.setup(1, MCP.OUT)
