@@ -1,5 +1,6 @@
 # MCP23017 Library
-I forked this project from ResonantWave. It is an easy to use library for the MCP23017 connected to a Raspberry Pi via IC2 bus. The picture shows the board I use for my setup.
+I forked this project from ResonantWave.  It is an easy to use library for the MCP23017 connected to a Raspberry Pi via IC2 bus. The picture shows the board I use for my setup.
+For more cool stuff visit the homepage: https://nixijav.com/post/14/simplifying-the-mcp23017#comments
 
 ![Board with a MCP23017 chip](https://custom-build-robots.com/wp-content/uploads/2017/03/MCP23017-300x257.jpg)
 
