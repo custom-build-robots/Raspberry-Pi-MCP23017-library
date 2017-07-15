@@ -21,7 +21,7 @@ With the next command you could check under which address your MCP23017 chip is 
 ```sh
 pi@test:~ $ sudo i2cdetect -y 1
 ```
-The output should look like the lines below. I changed the address from 20 to 24 by connecting pin A2 with 3.3V.
+The output should look like the lines below. I changed the address from 20 to 24 by connecting pin A2 with Vcc (5.0V).
 ```sh
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
