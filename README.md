@@ -3,18 +3,32 @@ I forked this project from ResonantWave. It is an easy to use library for the MC
 
 ![Board with a MCP23017 chip](https://custom-build-robots.com/wp-content/uploads/2017/03/MCP23017-300x257.jpg)
 
-### Installation
+### Installation I2C
 
-To enable the I2C support of your raspbian you have to go into the config menu and activate the I2C bus. 
+To enable the I2C support of your raspbian you have to go into the config menu and activate the I2C bus with the following command. 
 ```sh
 $ sudo raspi-config
 ```
-Then install the very helpful I2C tools with the following command:
+Then install the very helpful I2C tools with the following command to check the address the board is available through:
 
 ```sh
 $ sudo apt-get install python-smbus i2c-tools
 ```
+With the next command you could check under which address your MCP23017 chip is available.
 
+```sh
+pi@test:~ $ sudo i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- 24 -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+pi@test:~ $
+```
 ### Usage
 
 This library aims at being very similar to the RPi.GPIO library. At the moment it provides the following functions:
