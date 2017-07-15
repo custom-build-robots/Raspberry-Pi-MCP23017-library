@@ -5,7 +5,11 @@ I forked this project from ResonantWave. It is an easy to use library for the MC
 
 ### Installation
 
-To enable the I2C support of your raspbian you have to go into the config menu and activate the I2C bus. Then install the very helpful I2C tools with the following command:
+To enable the I2C support of your raspbian you have to go into the config menu and activate the I2C bus. 
+```sh
+$ sudo raspi-config
+```
+Then install the very helpful I2C tools with the following command:
 
 ```sh
 $ sudo apt-get install python-smbus i2c-tools
