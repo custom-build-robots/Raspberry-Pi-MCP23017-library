@@ -32,6 +32,13 @@ The output should look like the lines below. I changed the address from 20 to 24
 70: -- -- -- -- -- -- -- --
 pi@test:~ $
 ```
+
+### Clone the project
+To clone the project create a folder for example with the name "mcp" go into the folder and execute the following command to clone the project.
+
+```sh
+$ sudo git clone https://github.com/custom-build-robots/mcp23017_lib.git
+```
 ### Usage
 
 This library aims at being very similar to the RPi.GPIO library. At the moment it provides the following functions:
